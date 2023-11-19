@@ -21,7 +21,7 @@ The server provides the following endpoints:
 * `/about`: Provides information about the server.
 * `/realtime`: Establishes a WebSocket connection with the server that sends real-time updates of the current time.
 
-## Dependencies
+## Required dependencies
 
 The following dependencies are required to run the server:
 
