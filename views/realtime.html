@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Client</title>
+</head>
+
+<body>
+    <h1>WebSocket Client</h1>
+    <div id="time-container"></div>
+    <script>
+        // Get the time container element
+        const timeContainer = document.getElementById('time-container');
+
+        // Create a new WebSocket connection
+        const socket = new WebSocket('ws://localhost:3000');
+
+        // Handle the 'open' event
+        socket.onopen = () => {
+            console.log('WebSocket connection established');
+        };
+
+        // Handle the 'message' event
+        socket.onmessage = (event) => {
+            // Update the time container with the current time
+            timeContainer.textContent = `Current time: ${event.data}`;
+        };
+
+        // Handle the 'close' event
+        socket.onclose = () => {
+            // Update the time container to indicate the connection was closed
+            timeContainer.textContent = 'WebSocket connection closed';
+        };
+    </script>
+</body>
+
+</html>
