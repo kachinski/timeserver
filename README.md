@@ -19,7 +19,7 @@ The server provides the following endpoints:
 * `/`: Returns the current time.
 * `/date`: Returns the current date.
 * `/about`: Provides information about the server.
-* `/realtime`: Establishes a WebSocket connection with the server that sends real-time updates.
+* `/realtime`: Establishes a connection to the server that sends updates in real time.
 
 ## Required dependencies
 
