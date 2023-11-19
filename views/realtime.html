@@ -15,7 +15,7 @@
         const timeContainer = document.getElementById('time-container');
 
         // Create a new WebSocket connection
-        const socket = new WebSocket('ws://localhost:3000');
+        const socket = new WebSocket(`ws://${window.location.hostname}:3000`);
 
         // Handle the 'open' event
         socket.onopen = () => {
