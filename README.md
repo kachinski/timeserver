@@ -21,15 +21,6 @@ The server provides the following endpoints:
 * `/about`: Provides information about the server.
 * `/realtime`: Establishes a WebSocket connection with the server that sends real-time updates of the current time.
 
-## Functionality
-
-The server provides the following functionality:
-
-* Displays the current time in the user's locale.
-* Displays the current date in the user's locale.
-* Provides information about the server.
-* Establishes a WebSocket connection with the server, which will send real-time updates of the current time.
-
 ## Dependencies
 
 The following dependencies are required to run the server:
